@@ -1,0 +1,13 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+	<title>InFlow Django Demo - Home</title>
+</head>
+<body>
+	<h1>Here Are Some Currencies</h1>
+	{% for currency in currencies %}
+		<p><a href="{% url 'currency:detail' currency.UrlCode %}">{{ currency.FullName }}</a></p>
+	{% endfor %}
+</body>
+</html>

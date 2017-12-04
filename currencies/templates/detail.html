@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+	<title>InFlow Django Demo - Currency Detail View</title>
+</head>
+<body>
+	<h1>Viewing Currency Info For {{ currency.Code }}</h1>
+	<p>ID: {{ currency.IdCurrency }}</p>
+	<p>Country: {{ currency.Country }}</p>
+	<p>Name: {{ currency.Name }}</p>
+	<p><a href="{% url 'currency:base' %}">Back To Listing</a></p>
+</body>
+</html>
